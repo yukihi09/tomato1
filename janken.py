@@ -56,3 +56,5 @@ if st.button("B", key=2):
   df.to_csv("tomato1.csv", index=False )
   del st.session_state.key
   del st.session_state.key2
+
+st.download_button(label='結果ダウンロード', data=df.to_csv(), file_name='tomato1_result_.csv')
